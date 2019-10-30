@@ -5,16 +5,15 @@
 
 <title>红米Note8 最新上架！</title>
 	<style>
-*{margin: 0;padding: 0;}
-
-　　.box{width:300px;height:300px;position: relative;margin: 20px auto;}
-　　.header{height: 100px;width: 100%;background: #FF0000;}
-　　.content{position: absolute;top:100px;bottom: 0;background: yellow;height: auto;width: 100%;}
-　　.left{float: left;height: 100%;width: 100px;background: aqua;}
-　　/* .main{background: green;width: auto;height: 100%;padding-left: 100px;} */
-　　/* 这种情况,宽度是auto就会自己适应 */
-　　.main{background: green;width: 100%;height: 100%;padding-left: 100px;box-sizing: border-box;} 
-　　/* 这个时候width是100%,是相对于父元素的宽度,padding-left属性就会是宽度多出100px,这时候就需要设置box-sizing: border-box;的作用是把padding往里加,不会改变宽度. */
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;  
+    -webkit-tap-highlight-color:transparent;   
+}
 body{
     font-size: 14px;
     color: #333;
